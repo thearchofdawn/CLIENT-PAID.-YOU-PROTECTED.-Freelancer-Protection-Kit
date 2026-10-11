@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-purchase]').forEach(b=>b.addEventListener('click',()=>alert('Checkout is not connected yet. Please do not accept payments until a verified hosted checkout URL and delivery flow are configured.')));});
