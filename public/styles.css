@@ -59,3 +59,42 @@
 #previews .preview-caption small{color:#8a5a2c}
 #previews .preview-caption b{font:500 17px/1.2 Georgia,serif;color:#25231f}
 @media(max-width:540px){#previews .paper-preview{height:280px}#previews .preview-grid{gap:14px}}
+
+
+/* Product preview cards — high contrast, document-like, responsive */
+.previews .section-heading{margin-bottom:34px}
+.preview-grid{align-items:stretch;gap:16px}
+.preview-card{display:flex;flex-direction:column;min-width:0;background:#f4f0e8;border:1px solid #ded5c7;box-shadow:0 2px 8px #2a21130a;transition:transform .2s ease,box-shadow .2s ease}
+.preview-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px #2a211312}
+.paper-preview{height:300px;flex:1 0 300px;background:#fff;color:#26333b;border-bottom:1px solid #e1d9cc;padding:22px 24px;overflow:hidden;position:relative}
+.paper-preview:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:#6c94b4}
+.paper-preview>small{display:block;font-size:7px;letter-spacing:.07em;color:#526b7d;font-weight:700;border-bottom:1px solid #8eaec7;padding-bottom:7px}
+.cover-preview{background:#fff;padding:25px 24px}
+.cover-preview:before{height:0}
+.cover-preview strong{font-size:clamp(20px,2vw,29px);line-height:1.08;margin-top:54px;color:#273640;letter-spacing:-.025em}
+.cover-preview p{font-size:8px;line-height:1.55;color:#4f606b;font-weight:600;max-width:230px}
+.rule-lines{height:54px;background:repeating-linear-gradient(0deg,transparent 0 11px,#d6dfe5 12px 13px);margin-top:17px;border-top:1px solid #7c9eb9}
+.worksheet{background:#fff;padding:23px 25px}
+.worksheet:before{height:3px}
+.worksheet>b{font-size:12px;color:#243642;border-bottom:1px solid #8eaec7;padding-bottom:8px;margin-bottom:14px}
+.worksheet div{border:1px solid #d4dde2;background:#fbfcfd;padding:8px 9px;font-size:8px;color:#384953;margin-bottom:5px;height:31px}
+.document-preview{padding:22px 24px;background:#fff}
+.document-preview h4{font-family:"DM Sans",Arial,sans-serif;font-weight:700;font-size:21px;line-height:1.2;color:#263946;margin:36px 0 8px;padding-bottom:8px;border-bottom:1px solid #8eaec7}
+.document-preview p{font-size:9px;line-height:1.5;color:#53636d;margin:0 0 14px}
+.document-preview .fake-table{grid-template-columns:1fr 1fr;gap:2px;margin-top:12px;border:1px solid #b8c7d0;padding:0}
+.document-preview .fake-table i{height:21px;background:repeating-linear-gradient(0deg,#f8fafb 0 10px,#e7edf0 11px 12px);border-bottom:1px solid #cdd7dd}
+.document-preview .fake-table i:nth-child(odd){background:#edf2f5}
+.tracker-preview{padding:0;background:#f5f8f7;border-bottom:0}
+.tracker-preview:before{height:0}
+.tracker-head{background:#2d685a;color:#fff;padding:16px 15px;font-size:13px;letter-spacing:-.01em}
+.metrics{display:flex;gap:7px;padding:14px 10px 10px}
+.metrics i{display:flex;flex-direction:column;gap:4px;min-width:0;background:#fff;border:1px solid #e0e8e4;border-radius:3px;padding:11px 7px;font-style:normal;font-size:clamp(8px,1vw,12px);font-weight:700;color:#273e37;white-space:nowrap}
+.metrics small{font-size:8px;font-weight:500;color:#718079}
+.tracker-preview .fake-table{padding:0 10px;gap:3px;margin-top:7px}
+.tracker-preview .fake-table i{height:24px;background:#fff;border:1px solid #e1e8e5}
+.preview-caption{padding:15px 16px 17px;min-height:72px;background:#f4f0e8;gap:5px}
+.preview-caption small{font-size:8px;color:#956b37;letter-spacing:.12em}
+.preview-caption b{font:500 18px/1.2 "Playfair Display",Georgia,serif;color:#27231f}
+@media(max-width:850px){.paper-preview{height:270px;flex-basis:270px}.preview-grid{gap:12px}}
+@media(max-width:560px){.preview-grid{grid-template-columns:1fr}.paper-preview{height:320px;flex-basis:320px;padding:25px 28px}.preview-caption{min-height:66px}.document-preview h4{margin-top:48px}.cover-preview strong{margin-top:70px}.metrics i{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.preview-card{transition:none}.preview-card:hover{transform:none}}
