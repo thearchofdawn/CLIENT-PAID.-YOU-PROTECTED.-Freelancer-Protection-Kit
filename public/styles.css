@@ -29,3 +29,33 @@
 .preview-caption small{color:#785021}
 .preview-caption b{color:#24211e}
 @media(max-width:540px){.paper-preview{height:250px}.cover-preview strong{font-size:26px}.worksheet div{font-size:9px}}
+
+/* Match product preview cards to the reference document-page style */
+#previews .preview-grid{align-items:start;gap:12px}
+#previews .preview-card{background:#f6f2eb;border:1px solid #e0d8ca;box-shadow:0 1px 2px #2b241608}
+#previews .paper-preview{height:302px;padding:20px 22px;background:#fff;color:#1d2b33;border:0;box-sizing:border-box}
+#previews .paper-preview>small{display:block;color:#58717d;font-size:6px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid #9fb5c1;padding-bottom:6px}
+#previews .cover-preview{background:#f1f3f4;padding:26px 28px}
+#previews .cover-preview strong{margin-top:68px;font-family:Georgia,serif;font-size:26px;line-height:1.04;color:#202b30;letter-spacing:-.025em}
+#previews .cover-preview p{margin-top:10px;color:#53616a;font-size:7px;line-height:1.55;max-width:250px}
+#previews .rule-lines{height:36px;margin-top:13px;background:repeating-linear-gradient(0deg,transparent 0 8px,#d9e0e3 9px 10px)}
+#previews .worksheet{padding:24px 25px;background:#fff;border-top:0}
+#previews .worksheet>b{font-size:9px;margin:0 0 15px;color:#273a43}
+#previews .worksheet div{height:27px;padding:7px 8px;margin-bottom:3px;background:#fff;border:1px solid #d7e0e4;color:#45535a;font-size:6.5px;line-height:1.3}
+#previews .document-preview{padding:19px 23px;background:#fff;border-top:0}
+#previews .document-preview h4{font:700 19px Arial,sans-serif;color:#25343c;margin:18px 0 7px;padding-bottom:7px;border-bottom:1px solid #9fb5c1}
+#previews .document-preview p{font:8px/1.5 Arial,sans-serif;color:#5c6c73;margin:0 0 10px}
+#previews .document-preview .fake-table{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:10px}
+#previews .document-preview .fake-table i{height:21px;background:linear-gradient(180deg,#eaf0f2 0 48%,#fff 48%);border:1px solid #cdd8dc}
+#previews .tracker-preview{padding:0;background:#f6f8f8;border-top:0}
+#previews .tracker-head{background:#183e36;color:#fff;padding:13px 12px;font:700 11px Arial,sans-serif}
+#previews .metrics{gap:5px;padding:11px 7px}
+#previews .metrics i{padding:9px 4px;background:#fff;border:1px solid #dce5e2;color:#203b34;font:700 9px Arial,sans-serif}
+#previews .metrics small{color:#53675f;font:7px Arial,sans-serif}
+#previews .metrics i:nth-child(3){background:#fff8ef;color:#8a4e24}
+#previews .tracker-preview .fake-table{display:grid;grid-template-columns:1fr;gap:4px;padding:0 10px;margin-top:3px}
+#previews .tracker-preview .fake-table i{height:18px;background:linear-gradient(90deg,#dbe6e2 0 24%,#fff 24%);border:1px solid #d7e0dc}
+#previews .preview-caption{min-height:62px;padding:12px 14px;background:#f5f0e7}
+#previews .preview-caption small{color:#8a5a2c}
+#previews .preview-caption b{font:500 17px/1.2 Georgia,serif;color:#25231f}
+@media(max-width:540px){#previews .paper-preview{height:280px}#previews .preview-grid{gap:14px}}
