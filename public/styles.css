@@ -163,3 +163,29 @@
 #previews .tracker-footnote{font:5px Arial,sans-serif;color:#84918c;margin:5px 10px}
 @media(max-width:850px){#previews .paper-preview{height:290px;flex-basis:290px}}
 @media(max-width:560px){#previews .preview-grid{grid-template-columns:1fr}#previews .paper-preview{height:320px;flex-basis:320px;padding:22px 25px}#previews .tracker-preview{padding:0}#previews .document-preview h4{margin-top:18px}}
+
+
+/* Bundle value breakdown — aligned with the existing cream, ink, green and amber theme */
+.value-section{background:#fbf9f4}
+.value-heading{margin-bottom:30px}
+.value-panel{border:1px solid #ded5c7;background:#fffdf9;box-shadow:0 12px 32px #3025190a}
+.value-list{padding:8px 30px}
+.value-row{display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:15px;align-items:center;padding:18px 0;border-bottom:1px solid #e8e0d4}
+.value-number{display:grid;place-items:center;width:29px;height:29px;border:1px solid #d8c5a7;border-radius:50%;font:500 12px "Playfair Display",Georgia,serif;color:#97662e}
+.value-item{display:flex;flex-direction:column;gap:3px}
+.value-item b{font-size:12px;color:#29251f;font-weight:700}
+.value-item small{font-size:10px;color:#797268;line-height:1.5}
+.value-row>strong{font:500 20px "Playfair Display",Georgia,serif;color:#353027;white-space:nowrap}
+.value-total{display:grid;grid-template-columns:1fr 1fr;background:#f0ebe1}
+.value-total-copy,.value-price{padding:25px 30px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.value-total-copy{border-right:1px solid #ddd2c1}
+.value-total small{font-size:9px;letter-spacing:.11em;font-weight:700;color:#726656}
+.value-was{font:500 37px "Playfair Display",Georgia,serif;color:#6c6256;text-decoration:line-through;text-decoration-color:#b67a35;text-decoration-thickness:1px;margin:6px 0}
+.value-total-copy span,.value-price>span{font-size:10px;color:#777066}
+.value-price{background:#17352e;color:#fff8eb}
+.value-price small{color:#dbc6a3}
+.value-price>strong{font:600 42px "Playfair Display",Georgia,serif;color:#e5b35e;line-height:1.15;margin:5px 0}
+.value-price>span{color:#d3cec5;margin-bottom:13px}
+.value-price .button{align-self:stretch;justify-content:center;margin-top:2px}
+.value-disclaimer{font-size:9px;line-height:1.65;color:#837a6d;padding:13px 30px 16px;margin:0}
+@media(max-width:600px){.value-list{padding:6px 16px}.value-row{grid-template-columns:28px minmax(0,1fr) auto;gap:9px;padding:15px 0}.value-number{width:25px;height:25px;font-size:10px}.value-item b{font-size:11px;line-height:1.4}.value-item small{font-size:9px}.value-row>strong{font-size:17px}.value-total{grid-template-columns:1fr}.value-total-copy,.value-price{padding:20px}.value-total-copy{border-right:0;border-bottom:1px solid #ddd2c1}.value-was{font-size:32px}.value-price>strong{font-size:38px}.value-disclaimer{padding:12px 16px 15px}}
